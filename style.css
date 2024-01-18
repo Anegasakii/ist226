@@ -1,0 +1,55 @@
+@import url("https://anegasakii.github.io/base.css");
+
+/* stolen from main style.css lol */
+body { color: white; }
+
+main {
+	display: grid;
+	margin: auto;
+	width: 80%;
+	grid-template-columns: auto auto;
+	grid-auto-rows: 1fr;
+	justify-content: center;
+	align-content: center;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1% auto;
+	width: 80%;
+	padding: .5% 2%;
+	border: 3px solid var(--lighter);
+}
+
+h1, h2 {
+	display: inline;
+	margin: .5%;
+}
+
+h2 {
+	font-size: medium;
+	color: var(--lighter);
+}
+
+p {
+	font-size: medium;
+    margin: .1%;
+    margin-left: 5%;
+}
+
+a {
+	text-decoration:none;
+	color: white;
+}
+
+a:hover {
+	animation-name: textToMain;
+	animation-duration: 0.25s;
+	animation-fill-mode: forwards;
+}
+
+@media (max-width: 850px) {
+    main { display: block; }
+}
