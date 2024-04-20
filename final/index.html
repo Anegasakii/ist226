@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vien Bravo - IST226 Final Project</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="transparent blur">
+        <img src="media/img.png">
+        <div>
+            <h1>IST-226 Final Project</h1>
+            <h3>Spring 2024</h3>
+        </div>
+        <div>
+            <p>Vien Bravo</p>
+            <p>ybravovl@my.gvltec.edu</p>
+        </div>
+    </header>
+    <div class="columns">
+        <main>
+            <table>
+                <colgroup>
+                    <col id="colChapter" span="1">
+                    <col id="colName" span="1">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            <p>Chapter</p>
+                        </th>
+                        <th>
+                            <p>Name</p>
+                        </th>
+                        <th>
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><a href=../chapter1/ct_start.html>Curbside Thai</a></td>
+                        <td><p>Learning how to link multiple web pages together</p></td>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td><a href=../chapter2/tss_home.html>Tri and Succeed Sports</a></td>
+                        <td><p>An introduction to CSS</p></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href=../chapter3/pc_home>Pandaisia Chocolates</a></td>
+                        <td><p>Using floats to create more complex layouts</p></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href=../chapter4/tb_komatsu.html>Tree and Book</a></td>
+                        <td><p>Experimenting with CSS image filters</p></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td><a href=../chapter5/tf_home.html>Trusted Friends</a></td>
+                        <td><p>Implementing a responsive design with an adjusting navigation bar and layout</p></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href=../chapter6/dlr_evenings.html>Dakota Listener Radio</a></td>
+                        <td><p>Learning about how to populate and style complex tables</p></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href=../chapter7/rb_survey.html>Red Ball Pizza</a></td>
+                        <td><p>Trying out a wide variety of form controls and their styles</p></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href=../chapter8/cp_royal.html>Cinema Penguin</a></td>
+                        <td><p>Diving into more dynamic pages with animated effects and multimedia</p></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td>9</td>
+                    <td><a href=../chapter9/tny_clock.html>Tulsa's New Year</a></td>
+                    <td><p>An introduction to what Javascript is and how it can be used</p></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href=../chapter10/lht_august.html>Lyman Hall Theater</a></td>
+                    <td><p>A more involved demonstration of Javascript to dynamically create HTML</p></td>
+                </tr>
+            </table>
+        </main>
+        <section class="left">
+            <form method="post" class="transparent">
+                <fieldset>
+                    <legend>Data Collection</legend>
+                    <fieldset class="transparent blur">
+                        <legend>Demographics</legend>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" size="15">
+                        <label for="age">Age</label>
+                        <input id="age" type="number" min="-100" max="100" size="5">
+                    </fieldset>
+                    <fieldset class="transparent blur">
+                        <legend>Preferences</legend>
+                        <label for="colour">Favourite Colour</label>
+                        <input id="colour" type="color">
+                        <label for="letter">Favourite Letter</label>
+                        <input id="letter" type="text" size="1" maxlength="1" pattern="[^0-9]">
+                        <label for="file">Share something</label>
+                        <button onclick="document.getElementById('file').click()">Browse Files</button>
+                        <input id="file" type='file' style="display:none">
+                    </fieldset>
+                    <fieldset class="transparent blur">
+                        <legend>Feedback</legend>
+                        <label for="rate">Rating (1-10)</label>
+                        <input id="rate" type="range" step="1" min="1" max="10">
+                        <label for="longAnswer">Anything else?</label>
+                        <textarea id="longAnswer"></textarea>
+                    </fieldset>
+                </fieldset>
+                <input type="submit" value="Submit" onclick="alert('I\'m not doing anything with this.')">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+        <section class="right">
+            <video width="auto" controls title="Animated bouncing balls">
+                <source src="media/bounce.mp4" type="video/mp4">
+                Something went wrong; is this MP4 compatible?
+            </video>
+            <audio width="auto" controls title="Sousou no Frieren: Time Flows Ever Onward">
+                <source src="media/Time Flows Ever Onward.mp3" type="audio/mpeg">
+                Something went wrong; is this MP3 compatible?
+            </audio>
+        </section>
+    </div>
+    <footer class="transparent blur">
+        <a href="https://gvltec.edu/" target="_blank">Greenville Technical College</a>
+        <p>IST-226 W01</p>
+        <p>Created 2024/04/18</p>
+    </footer>
+</body>
+</html>
